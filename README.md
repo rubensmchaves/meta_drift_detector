@@ -70,7 +70,7 @@ source .venv/bin/activate
 Installing the required libraries through the file `requeriments.txt`. At you project root type:
 
 ```
-pip install -r requirements-minimal.txt
+pip install -r requirements.txt
 ```
 
 ### 2.4 Executing 
