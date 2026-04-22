@@ -1,0 +1,35 @@
+# Core ML & streams
+lightgbm==4.6.0
+numpy>=1.26.4,<2.4
+pandas==2.2.0
+river>=0.21.2
+scikit-learn==1.8.0
+scipy==1.17.0
+
+# Tuning & optimization
+cmaes==0.8.2
+optuna==4.7.0
+optuna-integration[lightgbm]==4.8.0
+
+# Visualization
+matplotlib==3.10.8
+plotly==5.7.0
+seaborn>=0.11.2
+
+# Explainability & utilities
+shap>=0.49.1
+tqdm==4.64.0
+
+# Custom / experiment-specific
+pyppca>=0.0.4
+kneed==0.8.5
+
+# Experiment Notebooks (Jupyter)
+ipykernel==6.9.1
+ipython>=8.12.0
+ipywidgets==7.7.0
+jupyter-client==7.1.2
+nbconvert==6.5.0
+nbformat==5.4.0
+notebook==6.4.12
+widgetsnbextension==3.6.0
