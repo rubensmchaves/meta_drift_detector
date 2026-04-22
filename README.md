@@ -1,4 +1,4 @@
-# Drift meta learning
+﻿# Drift meta learning
 
 The objective is to perform drift detection using meta learning by predicting the performance of a base classification model with unknown target (delayed).
 
@@ -42,42 +42,57 @@ It is important to note that, if you are using Windows this project has files wi
 
 The checkout command:
 
-```
+```bash
 git clone [git_project_url]
 ```
 
 ### 2.2 Local environment
 Setting your local environment using the module `venv`. Execute only once, when you set your project for the first time. We suggest to name you local enviroment as `.venv`. Add you source code `src` to the `PYTHONPATH`.
 
-```
+```bash
 python -m venv .venv
 echo 'export PYTHONPATH=src' >> .venv/bin/activate
 ```
 
 Once it is done, verify the prefix `.venv` (your local environment name) at the command prompt, something like:
 
-```
+```bash
 (.venv) user@my_computer:/$
 ```
 
 If it is not there, start your environment with the command:
 
-```
+```bash
 source .venv/bin/activate
 ```
 
 ### 2.3 Required libraries
 Installing the required libraries through the file `requeriments.txt`. At you project root type:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
 ### 2.4 Executing 
 
+The experiments can be executed using the script `src/experiments/run_experiment.py`. Since execution may take a considerable amount of time, it is recommended to run it in the background using the command below:
+
+```bash
+cd src/experiments
+nohup python3 run_experiment.py > run.log 2>&1 &
+``` 
+
+This command ensures that the process continues running even if the terminal session is closed.
+
+To monitor the execution, you can use: `ps  -p <process_id>`. The process ID is returned after running the command above. Alternatively, you can search for the process with:
+```bash
+ps aux | grep run_experiment.py 
+``` 
+
+
 ### 2.5 Close the local environment 
 Just run the `venv` command:
-```
+```bash
 deactivate
 ```
 
@@ -97,7 +112,7 @@ Many Machine Learning libraries (especially older versions or specific research 
 #### The Solution: Install System Dependencies
 To fix this for your **Meta-Learning** project, you need to use `sudo` to install the essential build tools and specific header files. Run the following command in your terminal:
 
-```
+```bash
 sudo apt update && sudo apt install -y build-essential libffi-dev python3-dev zlib1g-dev libjpeg-dev
 ```
 
@@ -112,19 +127,19 @@ Once the system packages are installed, try to install your project again. It is
 
 1. Activate your environment (if not already):
 
-```
+```bash
 source .venv/bin/activate
 ```
 
 2. Upgrade `pip`, `setuptools`, and `wheel`: This ensures you have the latest building logic.
 
-```
+```bash
 pip install --upgrade pip setuptools wheel
 ```
 
 3. Re-run your installation:
 
-```
+```bash
 pip install -r requirements.txt
 # OR, if you are installing the current folder:
 pip install -e .
