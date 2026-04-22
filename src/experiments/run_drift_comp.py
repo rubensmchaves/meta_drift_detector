@@ -1,7 +1,7 @@
 import numpy as np
 import time
 from utils import DriftContributionGenerator
-from utils import DATASETS_METADATA, MODELS_METADATA
+from utils import DATASETS_METADATA, CLF_MODELS_METADATA
 
 
 def get_window_size(metadata: dict) -> int:
@@ -14,7 +14,7 @@ def get_window_size(metadata: dict) -> int:
 
 # Run different datasets and base models
 start = time.time()
-for base_model in MODELS_METADATA.keys():
+for base_model in CLF_MODELS_METADATA.keys():
     for dataset_name, dataset_metadata in DATASETS_METADATA.items():
         for n_features in range(5, 101, 5):
             d_gen = DriftContributionGenerator(
