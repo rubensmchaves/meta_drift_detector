@@ -75,8 +75,10 @@ class MetaModel():
                 y_train,
                 eval_set=[(x_test, y_test)],
                 eval_metric="mse",
-                early_stopping_rounds=100,
-                callbacks=[LightGBMPruningCallback(trial, "l2")],
+                callbacks=[
+                    ltb.early_stopping(stopping_rounds=100, verbose=False),
+                    LightGBMPruningCallback(trial, "l2"),
+                ],                
             )
             preds = model.predict(x_test)
             cv_scores[idx] = mean_squared_error(y_test, preds)
