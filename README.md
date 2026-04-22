@@ -42,33 +42,44 @@ It is important to note that, if you are using Windows this project has files wi
 
 The checkout command:
 
-```$ git clone [git_project_url]```
+```
+git clone [git_project_url]
+```
 
 ### 2.2 Local environment
 Setting your local environment using the module `venv`. Execute only once, when you set your project for the first time. We suggest to name you local enviroment as `.venv`. Add you source code `src` to the `PYTHONPATH`.
 
-```$ python -m venv .venv
-   $ echo 'export PYTHONPATH=src' >> .venv/bin/activate
+```
+python -m venv .venv
+echo 'export PYTHONPATH=src' >> .venv/bin/activate
 ```
 
 Once it is done, verify the prefix `.venv` (your local environment name) at the command prompt, something like:
 
-```(.venv) feamelo@my_computer:/$```
+```
+(.venv) user@my_computer:/$
+```
 
 If it is not there, start your environment with the command:
 
-```$ source .venv/bin/activate```
+```
+source .venv/bin/activate
+```
 
 ### 2.3 Required libraries
 Installing the required libraries through the file `requeriments.txt`. At you project root type:
 
-```$ pip install -r requirements-minimal.txt```
+```
+pip install -r requirements.txt
+```
 
 ### 2.4 Executing 
 
 ### 2.5 Close the local environment 
 Just run the `venv` command:
-```$ deactivate```
+```
+deactivate
+```
 
 ## 3. Troubleshooting
 
@@ -86,7 +97,9 @@ Many Machine Learning libraries (especially older versions or specific research 
 #### The Solution: Install System Dependencies
 To fix this for your **Meta-Learning** project, you need to use `sudo` to install the essential build tools and specific header files. Run the following command in your terminal:
 
-```sudo apt update && sudo apt install -y build-essential libffi-dev python3-dev zlib1g-dev libjpeg-dev```
+```
+sudo apt update && sudo apt install -y build-essential libffi-dev python3-dev zlib1g-dev libjpeg-dev
+```
 
 Breakdown of what this does:
 * `build-essential`: Installs `gcc`, `g++`, and `make`. This solves the "No such file or directory" error for the compiler.
@@ -99,11 +112,15 @@ Once the system packages are installed, try to install your project again. It is
 
 1. Activate your environment (if not already):
 
-```source .venv/bin/activate```
+```
+source .venv/bin/activate
+```
 
 2. Upgrade `pip`, `setuptools`, and `wheel`: This ensures you have the latest building logic.
 
-```pip install --upgrade pip setuptools wheel```
+```
+pip install --upgrade pip setuptools wheel
+```
 
 3. Re-run your installation:
 
