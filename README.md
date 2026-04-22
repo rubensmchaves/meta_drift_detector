@@ -57,7 +57,7 @@ echo 'export PYTHONPATH=src' >> .venv/bin/activate
 Once it is done, verify the prefix `.venv` (your local environment name) at the command prompt, something like:
 
 ```
-(.venv) feamelo@my_computer:/$
+(.venv) user@my_computer:/$
 ```
 
 If it is not there, start your environment with the command:
