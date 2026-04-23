@@ -29,7 +29,7 @@ The objective is to perform drift detection using meta learning by predicting th
 - [x] Experiments notebooks adjustments to fit new MetaLearner structure
 
 ## 2. Running
-To work on this project is important to read the git good practive guide first, [here](https://github.com/rubensmchaves/drift-meta-learning.feamelo/blob/main/git_good_practice.md). For the following steps we consider that you are using a Linux like shell. 
+To work on this project is important to read the git good practive guide first, [here](./git_good_practice.md). For the following steps we consider that you are using a Linux like shell. 
 
 1. Clone this github project.
 2. Set a local environment, using `venv` module. Check the W3School tutorial [here](https://www.w3schools.com/python/python_virtualenv.asp).
