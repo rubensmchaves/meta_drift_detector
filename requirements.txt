@@ -25,7 +25,7 @@ pyppca>=0.0.4
 kneed==0.8.5
 
 # Experiment Notebooks (Jupyter)
-ipykernel>=6.0.0
+ipykernel>=6.25.0
 ipython>=8.12.0
 ipywidgets==7.7.0
 jupyter-client==7.1.2
