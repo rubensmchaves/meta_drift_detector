@@ -2,7 +2,8 @@
 lightgbm==4.6.0
 numpy>=1.26.4,<2.4
 pandas==2.2.0
-river>=0.21.2
+pyarrow>=14.0
+river==0.21.2
 scikit-learn==1.8.0
 scipy==1.17.0
 

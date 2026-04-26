@@ -1,3 +1,9 @@
+# Ignore versioned files like filename.v01.py, filename.v02.ipynb, etc.
+*.v[0-9][0-9].*
+
+# Ignore backup files like filename.bkp.py
+*.bkp.*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
