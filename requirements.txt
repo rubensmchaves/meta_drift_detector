@@ -12,10 +12,11 @@ cmaes==0.8.2
 optuna==4.7.0
 optuna-integration[lightgbm]==4.8.0
 
-# Visualization
+# Visualization & analysis
 matplotlib==3.10.8
-plotly==5.7.0
+plotly>=5.2.0
 seaborn>=0.11.2
+scikit-posthocs>=0.12.0
 
 # Explainability & utilities
 shap>=0.49.1
