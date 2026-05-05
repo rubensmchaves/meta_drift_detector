@@ -3,6 +3,7 @@
 
 # Ignore backup files like filename.bkp.py
 *.bkp.*
+*_bkp*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
